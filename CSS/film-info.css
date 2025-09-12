@@ -1,0 +1,41 @@
+.film-img img {
+  width: 100%;
+  height: 99vh;
+  object-fit: cover;
+  filter: opacity(0.3);
+}
+.film-img {
+  width: 40%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  background-color: black;
+}
+.film-info {
+  width: 100%;
+  text-align: center;
+  margin-top: -1%;
+  color: #fff;
+}
+img.film-couverture {
+  width: 40%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.film-info button {
+  background-color: #61646a;
+  width: 123px;
+  height: 31px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.film-info button a {
+  text-decoration: none;
+  color: #fff;
+}
+p.finPrevu {
+  color: #b3b3b3;
+  margin-left: 18%;
+}

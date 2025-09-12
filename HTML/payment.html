@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Finalisez votre réservation de cinéma en toute sécurité. Choisissez votre mode de paiement et réglez votre commande de billets et snacks rapidement." />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/transitionBody.css" />
+    <link rel="stylesheet" href="../CSS/responsiv.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/payment.css" />
+    <link rel="stylesheet" href="../CSS/film-info.css" />
+    <link rel="stylesheet" href="../CSS/accordionPaiement.css" />
+    <title>Pathé - Paiement</title>
+  </head>
+  <body class="fade">
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Accueil&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/presentation.html">Choisir une séance&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/places.html">Vos places&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/tarif.html">Tarifs&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/snack.html">Snacks&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/payment.html">Paiement</a></li>
+          </ul>
+          <div class="back">
+            <button id="go-back">
+              <a href="../HTML/snack.html">
+                <img
+                  src="../Assets/Pictos/fleche.png"
+                  style="
+                    width: 10px;
+                    height: 10px;
+                    rotate: 180deg;
+                    margin-right: 10px;
+                  "
+                  alt="picto fleche pour le bouton retour"
+                />Retour
+              </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="gestion-paiement">
+        <div class="gestion-cine">
+            <div class="film" id="film">
+            <!-- Couverture du film, dynamique -->
+            </div>
+        </div>
+        <div class="pathe-payment">
+            <div class="payment" id="payment">
+                <!-- le  paiement -->
+            </div>
+            <div class="panier-total">
+          <!--total a regler -->
+        </div>
+        <div class="btn-next">
+          <button class="continuer-btn">
+            <a href="/HTML/finalisation.html"
+              >Continuer
+              <img
+                src="../Assets/Pictos/fleche-droite.png"
+                alt="picto fleche page suivante des cinéma pathé"
+                style="width: 34px; height: 34px"
+            /></a>
+          </button>
+        </div>
+        
+      </section>
+        
+        <script src="../JS/payment.js"></script>
+        <script src="../JS/tarif.js"></script>
+        <script src="../JS/snack.js"></script>
+        <script src="../JS/transitionBody.js"></script>
+  </body>
+</html>

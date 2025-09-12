@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Heebo", sans-serif;
+}
+.navbar ul li:nth-child(2) a {
+  color: #feb91e;
+  text-decoration: underline;
+}
+section#films-container {
+  padding: 2rem;
+}
+.film {
+  color: white;
+}
+div.img img {
+  width: 80px;
+  height: 100px;
+}
+.img:hover {
+  transform: scale(1.07);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.contenu-film {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  line-height: 2rem;
+}
+.horaires {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.horaires button {
+  background-color: #202020;
+  color: white;
+  width: 148px;
+  height: 125px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.horaires button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 1rem;
+}
+
+button.back-to-top {
+  top: 90%;
+  right: 3%;
+  position: fixed;
+  background-color: #feb91e;
+  width: 43px;
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+}
+/** les tags des film */
+.genres {
+  color: #ffffff6e;
+}
+
+span.violence {
+  background-color: #ffffff7a;
+  border-radius: 100%;
+  color: black;
+  padding: 2px 8px;
+}
+span.age {
+  background-color: #ffffff7a;
+  border-radius: 100%;
+  color: black;
+  padding: 2px 2px;
+}
+span.frisson {
+  background-color: white;
+  color: black;
+  padding: 2px;
+  border-radius: 1px;
+}
+span.nouveau {
+  background-color: red;
+  padding: 2px;
+  border-radius: 1px;
+}
+/*-------------------------------------------------*/
+/*couleur de base des bouttons et select */
+select#genre-select,
+button#btn-4k,
+select#langue-select,
+input#search-input {
+  background-color: #202020;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+/* gestion du cercle qui suis la souris dans les bouttons */
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-hover .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%) scale(3);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.199) 10%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+/*---------------------------------------------*/
+button#clear-filters {
+  background-color: #202020;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+button#clear-filters:hover {
+  background-color: #feb91e;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}

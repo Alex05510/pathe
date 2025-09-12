@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="séléctionner un tarif pour le film sélectionné au cinéma Pathé Lyon Bellecour. profitez d'une expérience cinématographique inoubliable."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/tarif.css" />
+    <link rel="stylesheet" href="../CSS/film-info.css" />
+    <link rel="stylesheet" href="../CSS/transitionBody.css" />
+    <link rel="stylesheet" href="../CSS/responsiv.css" />
+    <title>Pathé - Tarifs</title>
+  </head>
+  <body class="fade">
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Accueil&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/presentation.html">Choisir une séance&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/places.html">Vos places&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+            <li><a href="../HTML/tarif.html">Tarifs&ensp;<img src="../Assets/Pictos/fleche.png" alt="picto fleche pour le bouton retour" style="width: 10px; height: 10px;" /></a></li>
+          </ul>
+          <div class="back">
+            <button id="go-back">
+              <a href="../HTML/places.html">
+                <img
+                  src="../Assets/Pictos/fleche.png"
+                  style="
+                    width: 10px;
+                    height: 10px;
+                    rotate: 180deg;
+                    margin-right: 10px;
+                  "
+                  alt="picto fleche pour le bouton retour"
+                />Retour
+              </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <section class="gestion-cine">
+    <!-- Couverture du film, dynamique -->
+    <div class="film" id="film">
+          <!-- info du film gérée via JSON et js -->
+        </div>
+
+    <!-- Section tarifs dynamique -->
+  </section>
+    <div class="tarif-container">
+      <section class="tarif-details">
+        <div class="salle-header">
+          <h3 id="salle-num">
+            <!-- salle importé en js-->
+          </h3>
+        </div>
+        <h3>Sélectionnez vos tarifs</h3>
+        <div class="promo-section">
+          <img src="../Assets/Pictos/menu-pass.png" alt="logo menu pass ciné pathé" style="width: 50px; height: 66px;" class="cine-pass">
+          <span>Ajoutez votre CinePass ou code promo...</span>
+          <button>Ajouter</button>
+        </div>
+        <div class="tarif-selection">
+          <div class="tarif-row">
+            <span>Matin</span>
+            <div class="spacement"></div>
+            <div class="button-row">
+              <button class="moins" data-tarif="matin"><img src="../Assets/Pictos/bouton-moins.png" alt="" style="width:17px; height:17px;"></button>
+              <span class="tarif-qty" id="qty-matin">0</span>
+              <button class="plus" data-tarif="matin"><img src="../Assets/Pictos/cercle.png" alt="" style="width:17px;height:17px;"></button>
+            </div>
+          </div>
+          <div class="tarif-row">
+            <span>Moins de 14 ans</span>
+            <div class="spacement"></div>
+            <div class="button-row">
+              <button class="moins" data-tarif="enfant"><img src="../Assets/Pictos/bouton-moins.png" alt="" style="width:17px; height:17px;"></button>
+              <span class="tarif-qty" id="qty-enfant">0</span>
+              <button class="plus" data-tarif="enfant"><img src="../Assets/Pictos/cercle.png" alt="" style="width:17px;height:17px;"></button>
+            </div>
+          </div>
+        </div>
+        <button class="modifier-btn"><a href="../HTML/places.html">Modifier vos places</a></button>
+        <div class="tarif-summary" id="tarif-summary">
+          <!-- Résumé dynamique -->
+        </div>
+        <div class="cart-tarif">
+          <div class="tarif-total" id="tarif-total">
+          <!-- Total dynamique -->
+          </div>
+          <div class="btn-next">
+            <button class="continuer-btn"><a href="/HTML/snack.html">Continuer <img src="../Assets/Pictos/fleche-droite.png" alt="picto fleche page suivante des cinéma pathé" style="width: 34px; height: 34px;"></a></button>
+          </div>
+      </section>
+    </div>
+    <script src="../JS/tarif.js"></script>
+    <script src="../JS/transitionBody.js"></script>
+  </body>
+</html>

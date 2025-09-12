@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez les films à l'affiche, leurs horaires, genres et toutes les informations pour réserver votre séance au cinéma Pathé Lyon Bellecour."
+    />
+    <link rel="stylesheet" href="../CSS/transitionBody.css" />
+    <link rel="stylesheet" href="../CSS/presentation.css" />
+    <link rel="stylesheet" href="../CSS/responsiv.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <title>Pathé - A l'affiche</title>
+  </head>
+  <body class="fade">
+    <header>
+      <div class="navbar" id="top">
+        <button class="back-to-top">
+          <img
+            src="../Assets/Pictos/fleche.png"
+            alt="Logo"
+            style="transform: rotate(-90deg); width: 20px; height: 20px"
+          />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="/index.html"
+                >Accueil&ensp;<img
+                  src="../Assets/Pictos/fleche.png"
+                  alt="picto fleche pour le bouton retour"
+                  style="width: 10px; height: 10px"
+              /></a>
+            </li>
+            <li>
+              <a href="../HTML/presentation.html"
+                >Choisir une séance&ensp;<img
+                  src="../Assets/Pictos/fleche.png"
+                  alt="picto fleche pour le bouton retour"
+                  style="width: 10px; height: 10px"
+              /></a>
+            </li>
+          </ul>
+          <div class="back">
+            <button id="go-back">
+              <a href="../index.html">
+                <img
+                  src="../Assets/Pictos/fleche.png"
+                  style="
+                    width: 10px;
+                    height: 10px;
+                    rotate: 180deg;
+                    margin-right: 10px;
+                  "
+                  alt="picto fleche pour le bouton retour"
+                />Retour
+              </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="recherche">
+        <div
+          style="display: flex; gap: 10px; margin-bottom: 20px; padding: 2rem"
+        >
+          <select id="genre-select">
+            <option value="">Genres</option>
+            <option value="Action">Action</option>
+            <option value="Comédie">Comédie</option>
+            <option value="Horreur">Horreur</option>
+            <option value="Animation">Animation</option>
+            <option value="Aventure">Aventure</option>
+            <option value="Fantastique">Fantastique</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Arts Martiaux">Arts Martiaux</option>
+          </select>
+          <button id="btn-4k">4K</button>
+          <select id="langue-select">
+            <option value="">Langues</option>
+            <option value="VF">VF</option>
+            <option value="VOST">VOST</option>
+          </select>
+          <input type="text" id="search-input" placeholder="Rechercher ..." />
+          <button class="anuler-tout" id="clear-filters">
+            Annuler réservation
+          </button>
+        </div>
+      </section>
+
+      <section id="films-container">
+        <!-- Les films seront insérés ici dynamiquement -->
+      </section>
+      <div
+        id="modal-trailer"
+        style="
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 1000;
+        "
+      >
+        <div
+          style="
+            position: relative;
+            margin: 5% auto;
+            width: 80%;
+            max-width: 700px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 1rem;
+          "
+        >
+          <span
+            id="close-modal"
+            style="
+              position: absolute;
+              top: -10px;
+              right: 3px;
+              font-size: 2rem;
+              cursor: pointer;
+            "
+            >&times;</span
+          >
+          <div id="trailer-content"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../JS/Index.js"></script>
+    <script src="../JS/transitionBody.js"></script>
+  </body>
+</html>

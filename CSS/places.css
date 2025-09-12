@@ -1,0 +1,180 @@
+body {
+  color: white;
+  font-family: "Heebo", sans-serif;
+}
+.navbar ul li:nth-child(3) a {
+  color: #feb91e;
+  text-decoration: underline;
+}
+div#salle {
+  width: 70%;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+}
+div#salle h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+div#salle h3 {
+  position: absolute;
+  top: 2%;
+  left: 43%;
+}
+div#salle p {
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 1rem;
+}
+
+div#film {
+  width: 40%;
+}
+section.gestion-cine {
+  display: flex;
+}
+.siege {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Siège libre */
+.libre {
+  background-image: url("../Assets/Pictos/siege-jaune.png");
+}
+
+/* Siège pris */
+.prise {
+  background-image: url("../Assets/Pictos/siege-gris.png");
+  cursor: not-allowed;
+}
+.siege.handicap.selectionne {
+  background-color: #009357;
+  /* ou une couleur de fond si tu utilises des SVG ou du CSS pur */
+}
+
+/* Siège sélectionné */
+.siege.selectionne {
+  background-image: url("../Assets/Pictos/siege-vert.png");
+  animation: bounce 0.4s ease;
+}
+/** animation de rebond quand sélectionné */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.siege.decale {
+  margin-left: 40px;
+}
+p.film-salle {
+  position: absolute;
+  top: 3.5%;
+  left: 45%;
+  color: black;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+/* Siège handicapé */
+.siege.handicap {
+  background-image: url("../Assets/Pictos/desactive-white.png");
+  background-size: 80%;
+  background-color: #daa846;
+  border-radius: 5px;
+}
+.siege:hover {
+  transform: scale(1.3);
+  transition: transform 0.2s;
+}
+.legende {
+  margin-top: 2rem;
+}
+.gestion-sieges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.gest-ecran {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left,
+.right {
+  padding: 0.4rem 9rem;
+  background-color: orange;
+}
+.ecran {
+  padding: 0 3rem 0 3rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: #daa846;
+}
+button#reserver-place {
+  position: fixed;
+  top: 93%;
+  background-color: #feb91e;
+  width: 60%;
+  height: 67px;
+  left: 40%;
+  border: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 19px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+span#places-error {
+  position: absolute;
+  top: 84%;
+  left: 60%;
+}
+/* Adaptations tablette (600px à 1280px) */
+@media (max-width: 1280px) and (min-width: 600px) {
+  div#salle {
+    width: 60%;
+    padding: 0rem;
+  }
+  .siege {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  div#salle p {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 0rem;
+  }
+}

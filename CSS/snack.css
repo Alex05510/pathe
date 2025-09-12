@@ -1,0 +1,232 @@
+.navbar ul li:nth-child(5) a {
+  color: #feb91e;
+  text-decoration: underline;
+}
+body {
+  font-family: "Heebo", sans-serif;
+}
+section.gestion-cine {
+  display: flex;
+  width: 100%;
+}
+div#film {
+  width: 37%;
+}
+div#snack {
+  width: 56%;
+  height: 64vh;
+  margin-left: 6%;
+}
+div#snack h1 {
+  text-align: center;
+}
+#salle-num {
+  position: absolute;
+  top: 2%;
+  left: 43%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.snack-items {
+  display: flex;
+  gap: 2rem;
+}
+.snack-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  border: solid 1px #e2e2e2;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 153px;
+  height: 187px;
+  box-shadow: 0 4px 8px rgba(0, 4, 15, 12%);
+}
+.carte-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.snack-item p {
+  font-size: 14px;
+}
+.snack-item span {
+  font-size: 16px;
+}
+.snack-categorie h1 {
+  text-align: center;
+}
+.snack-categorie h2 {
+  font-size: 16px;
+}
+
+div#snack-panier {
+  margin-left: 40%;
+  margin-top: 2.8rem;
+  width: 62%;
+  height: 117px;
+  background-color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 77%;
+  overflow-y: scroll;
+  border-top: solid 1px #d9d9d9;
+}
+section.cart {
+  display: flex;
+  align-items: end;
+}
+.continuer-btn {
+  width: 220px;
+  height: 56px;
+  background-color: #feb91e;
+  border: none;
+  position: fixed;
+  top: 94.1%;
+  left: 89%;
+}
+.continuer-btn a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 800;
+  font-size: 19px;
+}
+.gestion-panier {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+.panier {
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  top: 94.1%;
+  left: 40%;
+  background-color: #ffdc7d;
+  padding: 1rem;
+  width: 49%;
+  height: 57px;
+}
+
+@keyframes glissement {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.panier-item {
+  animation: glissement 0.5s ease;
+}
+img.supprimer-item {
+  background-color: #feb91e;
+  border-radius: 50%;
+  padding: 3px;
+}
+p.film-salle {
+  position: absolute;
+  top: 3.5%;
+  left: 45%;
+  color: black;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+@media (max-width: 1280px) and (min-width: 600px) {
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  div#film {
+    width: 40%;
+  }
+  div#snack {
+    width: 54%;
+    height: 64vh;
+    margin-left: 6%;
+    overflow: scroll;
+  }
+  .panier {
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    top: 93.2%;
+    left: 40%;
+    background-color: #ffdc7d;
+    padding: 1rem;
+    width: 55%;
+    height: 57px;
+  }
+
+  div#snack-panier {
+    margin-left: 37%;
+    width: 62%;
+    height: 117px;
+    background-color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 68%;
+    overflow-y: scroll;
+    border-top: solid 1px #d9d9d9;
+  }
+  .continuer-btn {
+    width: 220px;
+    height: 56px;
+    background-color: #feb91e;
+    border: none;
+    position: fixed;
+    top: 93.2%;
+    left: 83%;
+  }
+  .snack-item {
+    text-align: center;
+    border: solid 1px #e2e2e2;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 120px;
+    height: 173px;
+    box-shadow: 0 4px 8px rgba(0, 4, 15, 12%);
+  }
+  .snack-item p {
+    font-size: 9px;
+  }
+  .snack-item span {
+    font-size: 8px;
+  }
+  button.quantité-inf img,
+  button.quantité-sup img {
+    width: 10px;
+  }
+  div#snack-panier {
+    margin-left: 40%;
+    width: 62%;
+    height: 117px;
+    background-color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 74%;
+    overflow-y: scroll;
+    border-top: solid 1px #d9d9d9;
+  }
+}

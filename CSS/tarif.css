@@ -1,0 +1,162 @@
+.navbar ul li:nth-child(4) a {
+  color: #feb91e;
+  text-decoration: underline;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: "Heebo", sans-serif;
+}
+main {
+  display: flex;
+}
+div#film {
+  width: 100%;
+}
+section.gestion-cine {
+  display: flex;
+  width: 42%;
+}
+.tarif-container {
+  width: 63%;
+}
+.tarif-container h3 {
+  text-align: center;
+  margin-top: 8rem;
+  font-weight: 800;
+  font-size: 30px;
+}
+.promo-section {
+  width: 590px;
+  height: 56px;
+  background-color: #ffdc7d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+img.cine-pass {
+  position: absolute;
+  left: 53.5%;
+  top: 28%;
+}
+.tarif-row {
+  display: flex;
+  justify-content: space-between;
+}
+.promo-section button {
+  background-color: #1c2129;
+  border: none;
+  border-radius: 5px;
+  width: 84px;
+  height: 26px;
+  color: #fff;
+}
+#salle-num {
+  position: absolute;
+  top: -8%;
+  left: 43%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tarif-selection {
+  width: 590px;
+  height: 129px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+button.modifier-btn {
+  width: 152px;
+  height: 31px;
+  border-radius: 20px;
+  background-color: #1c2129;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+button.modifier-btn a {
+  text-decoration: none;
+  color: white;
+}
+div#tarif-summary {
+  background-color: #fff;
+  width: 95%;
+  height: 134px;
+  padding: 2rem;
+  position: fixed;
+  top: 80%;
+}
+div#tarif-summary h4 {
+  margin-bottom: 1rem;
+}
+.cart-tarif {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-left: 5%;
+  position: fixed;
+  left: 35%;
+  top: 94.1%;
+}
+div#tarif-total {
+  width: 81%;
+  height: 56px;
+  background-color: #ffdc7d;
+}
+button.continuer-btn {
+  width: 220px;
+  height: 56px;
+  background-color: #feb91e;
+  border: none;
+}
+button.continuer-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 19px;
+  font-weight: 800;
+}
+.promo-section {
+  margin-left: 25%;
+  margin-top: 1rem;
+}
+.tarif-selection,
+.modifier-btn {
+  margin-left: 25%;
+}
+div#tarif-total {
+  padding: 1rem;
+}
+p.film-salle {
+  position: absolute;
+  top: 3.5%;
+  left: 45%;
+  color: black;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+/* Adaptations tablette (600px à 1280px) */
+@media (max-width: 1280px) and (min-width: 600px) {
+  .tarif-selection,
+  .modifier-btn {
+    margin-left: 10%;
+  }
+  .promo-section {
+    margin-left: 10%;
+    margin-top: 1rem;
+  }
+  img.cine-pass {
+    position: absolute;
+    left: 43.5%;
+    top: 32%;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+}
