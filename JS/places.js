@@ -78,7 +78,7 @@ for (let row = 0; row < NB_RANGES; row++) {
     if (row < 13 && (seat === 4 || seat === 14)) {
       decaleClass = " decale";
     }
-    html += `<span class="siege${decaleClass} ${priseClass}" data-id="${id}"></span>`;
+    html += `<span class="siege${decaleClass} ${priseClass}" data-id="${id}" tabindex="${seat}"></span>`;
   }
   html += "</div>";
 }
